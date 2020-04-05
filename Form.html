@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		.inputWithIcon input[type=email]
+		{
+			padding-right:40 px;
+		}
+		.inputWithIcon{
+			position: relative;
+		}
+		.inputWithIcon span{
+			position: absolute;
+			left:90%;
+			top:0px;
+			padding: 9px 8px;
+			color: #aaa;
+			transition: .3s;
+		}
+		.form-container{
+			position: absolute;
+				background-color: #fff;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0px 0px 10px 0px #000;
+		}
+		.bg{
+			top: 10vh;
+			background:url(bckgr.jpg) no-repeat;
+			width: 100%;
+			height: 100vh;
+			background-size: 200%;
+		}
+		@media only screen and (max-width: 670px){
+			.bg{
+				background-size: 300%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="container-fluid bg">
+		<section class="row justify-content-center">
+			<section class="col-12 col-sm-6 col-md-3">
+			<form class="form-container">
+				<div class="d-flex p-2 bd-highlight" style="width:100%rem;height:3.5rem;background-color:#61C6E8">
+					<div class="col-md-1">
+						<span class="glyphicon glyphicon-education"aria-hidden="true"style="color:white;font-size: 30px"></span>
+					</div>
+				<div class="col-md-10"><p class="text-center"style="color: white;padding-top: 5px;padding-right: 5px"><strong>Sign In</strong></p>
+				</div>
+				<div>
+					<button type="button" class="close btn-light" aria-label="Close"style="padding-top: 10px;padding-right:5px">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				</div>
+				<br><br>
+				  <div class="form-group inputWithIcon">
+				    <input  type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@example.com">
+				    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+				  </div>
+				  <div class="form-group inputWithIcon">
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+				    <span class="glyphicon glyphicon-lock"aria-hidden="true"></span>
+				  </div>
+				  <br>
+				 <button type="button" class="btn btn-info btn-lg btn-block"><strong>SIGN IN</strong></button>
+				 <br>
+				 <p><a href="#a" style="color:black">forgot your password?</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="#b" style="color:black">Register!</a></p>
+				 <label> </label>
+				 <div class="col-sm-5">
+				 	<hr style="height:1px;border:none;color:#333;background-color:lightgrey;" />
+				 </div>
+				 <div class="col-md-2" style="padding-top: 10px">
+				 	<p>&nbsp&nbspOR&nbsp&nbsp</p>
+				 </div>
+				 <div class="col-sm-5">
+				 	<hr style="height:1px;border:none;color:#333;background-color:lightgrey;" />
+				 </div>
+				 <br><br><br>
+				  <button type="button" class="btn btn-lg btn-block" style="background-color:#517DFE "><i class="fa fa-facebook-f" style="color: white"></i></button>
+				  <button type="button" class="btn  btn-lg btn-block" style="background-color: #F96D87 "><i class="fa fa-glide-g" style="color: white"></i></button>
+				  <br><br>
+				   <button type="button" class="btn btn-warning btn-lg btn-block"><strong>< EPAM LOGIN ></strong></button>
+			</form>
+			</section>
+		</section>
+	</section>
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  	<script src="js/bootstrap.js"></script>
+	</body>
+</html>
